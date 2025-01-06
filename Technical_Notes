@@ -1,0 +1,83 @@
+Variables:
+
+Types of virables:
+
+1)var
+2)let
+3)const
+
+-case sensitive
+-cant start with numbers
+-reserved words not allowed
+
+1) Reassigning variables is possible by var
+Example:
+    <script> // reassigining with var
+        var a = 1
+        a = 5
+        console.log(a+a)
+    </script>
+
+2) Reassigning with let also accepted
+Example:
+    <script> // reassigning with let
+        let a =1
+        a = 5
+        console.log(a+a)
+    </script>
+
+3) Reassigning with const not accepted
+Example:
+    <script> // reassigning with const
+        const a =1
+        a = 5
+        a = a+a
+        console.log(a+a)
+    </script>
+
+1) Redecalring with var is accepted
+Example:
+    <script> // redecalring with var
+        var a =1 
+        var a =5
+        console.log(a+a)
+    </script>
+
+2) Redecalring with let is not accepted
+Example:
+    <script>   // redeclaring with let
+        let a = 1
+        let a = 5
+        console.log(a+a)
+    </script>
+
+3) Redclaring with const is not possible
+Example:
+    <script> // redeclaring with const
+        const a = 1
+        const a = 1
+        console.log(a+a)
+    </script>
+
+1) Variables decalerd with var does not have Block Scope
+Example:
+    <script> // block scope for var
+        var a = "sindu"
+        {
+            var a = "reshma"
+            console.log(a)
+        }
+        console.log(a)
+    </script>
+
+2) Variables declared with let have Block Scope
+Example:
+    <script> //block scope for let
+        let a = "sindhu"
+        {
+            let a = "reshma"
+            console.log(a)
+        }
+        console.log(a)
+    </script>
+
